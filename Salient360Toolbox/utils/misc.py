@@ -188,7 +188,7 @@ def printC(*args, color="21", bold=False, tab=0, clear=False, verbose=1, exit_=F
 	else:
 		tab = " "*(tab*2)
 
-	if os.name == "nt":
+	if 0:
 		print("{}{}{}".format(
 				cl,
 				" "*(tab*2),

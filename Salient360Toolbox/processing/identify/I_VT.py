@@ -22,7 +22,7 @@ def parse(timestamp, velocity,
 
 	# Label as part of fixations samples with velocity below threshold
 	#	i.e., Fixation == 1, Saccade == 0
-	fixationMarkers = np.array(velocity <= threshold, dtype=np.bool)
+	fixationMarkers = np.array(velocity <= threshold, dtype=bool)
 
 	fix_gen(fixationMarkers)
 
